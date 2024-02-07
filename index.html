@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="icon" type="image/x-icon" href="/PizzaIcon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🤡 CHARACTER CREATOR<span id="alien">👽</span></h1>
+
+    <div id="editMode">
+        <div id="editWindow" class="creator">
+            <div class="creatorInput">
+                <label>Name: </label>
+                <input id="nameEdit" type="text">
+            </div>
+    
+            <div class="creatorInput">
+                <label>Image: </label>
+                <label for="imageInput" id="upImage">UploadImage 📷</label>
+                <input id="imageInput" type="file" accept="image/png, image/jpg">
+            </div>
+    
+            <div class="creatorInput">
+                <label>From: </label>
+                <input id="fromEdit" type="text">
+            </div>
+    
+    
+            <div class="creatorInput">
+                <label>Like: </label>
+                <input id="likeEdit" type="text">
+            </div>
+    
+            <div class="creatorInput">
+                <label>About: </label>
+                <input id="aboutEdit" type="text">
+            </div>
+
+        </div>
+        <div id="overlay" onclick="popupOut()"></div>
+    </div>
+
+    <div id="createWindow" class="creator">
+
+        <div class="creatorInput">
+            <label>Name: </label>
+            <input id="nameInput" type="text">
+        </div>
+
+        <div class="creatorInput">
+            <label>Image: </label>
+            <label for="imageInput" id="upImage">UploadImage 📷</label>
+            <input id="imageInput" type="file" accept="image/png, image/jpg">
+        </div>
+
+        <div class="creatorInput">
+            <label>From: </label>
+            <input id="fromInput" type="text">
+        </div>
+
+
+        <div class="creatorInput">
+            <label>Like: </label>
+            <input id="likeInput" type="text">
+        </div>
+
+        <div class="creatorInput">
+            <label>About: </label>
+            <input id="aboutInput" type="text">
+        </div>
+        
+        <button class="createEditCharacter" onclick="createCharacter()">Create</button>
+        
+    </div>
+    <hr>
+
+    <div id="characters">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
